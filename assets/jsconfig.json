@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../../hugo-agency-web/assets/*"
+   ]
+  }
+ }
+}

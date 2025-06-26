@@ -1,0 +1,13 @@
+enable: true
+
+title: "Experienced **mobile and web** applications and website builders measuring."
+text: "KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects. We build and develop mobile applications for several top platforms, including Android  & IOS."
+
+buttons:
+  - label: "Contact Us"
+    link: "#"
+
+  - label: "View More"
+    link: ""
+
+image: "images/hero-image.png"
