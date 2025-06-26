@@ -1,0 +1,3 @@
+{{ define "main" }}
+  {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
+{{ end }}
