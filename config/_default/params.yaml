@@ -1,9 +1,9 @@
 title: "Agency Web"
 description: "Experienced mobile and web applications and website builders measuring."
 images: 
-  - "images/hero-image.png"
+  - "images/home/hero/bill-sitting.png"
 
-logo: "images/logo.png"
+# logo: "images/shared/logo.png"
 
 favicons:
   themeColor: "#FFFFFF"

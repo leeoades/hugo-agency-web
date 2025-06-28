@@ -35,6 +35,8 @@
       "flex-col",
       "font-semibold",
       "gap-8",
+      "grid",
+      "grid-cols-2",
       "grow",
       "h-full",
       "hero",
