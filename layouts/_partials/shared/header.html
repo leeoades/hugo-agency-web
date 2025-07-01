@@ -20,7 +20,7 @@
       class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:relative xl:translate-y-0 xl:flex-row"
       id="navbarContent"
     >
-      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden">
+      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden z-50">
         <a class="flex items-center xl:hidden" href="{{ .Site.BaseURL }}">
           {{ with site.Params.logo }}
             {{ partial "utilities/image.html" (dict "src" . "class" "h-6 w-auto") }}

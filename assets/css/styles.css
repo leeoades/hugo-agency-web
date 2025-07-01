@@ -4,6 +4,8 @@
 @import './shared/fonts.css';
 @import './shared/pagination.css';
 
+@import './home/hero.css';
+
 @layer base {
   html {
     font-family: 'Poppins', system-ui, sans-serif;
@@ -11,7 +13,7 @@
 }
 
 @theme {
-  --color-primary: {{ (default "#1090CB	" site.Params.colors.primary) }};
+  --color-primary: {{ (default "#1090CB" site.Params.colors.primary) }};
 }
 
 body {

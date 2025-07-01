@@ -84,12 +84,33 @@
       {{ end }}
     {{ end }}
 
+
     <!-- Publish Fonts -->
     {{ with resources.Match "fonts/*" }}
       {{ range . }}
         {{ .Publish }}
       {{ end }}
     {{ end }}
+
+    <!-- Load Font Awesome -->
+    {{ with resources.Get "vendor/fontawesome-free/css/all.min.css" }}
+      {{ with . | fingerprint }}
+        <link
+          rel="stylesheet"
+          href="{{ .RelPermalink }}"
+          integrity="{{ .Data.Integrity }}"
+          crossorigin="anonymous"
+        />
+      {{ end }}
+    {{ end }}
+
+    <!-- Publish Font Awesome Fonts -->
+    {{ with resources.Match "vendor/fontawesome-free/webfonts/*" }}
+      {{ range . }}
+        {{ .Publish }}
+      {{ end }}
+    {{ end }}
+
 
     <!-- Load JS -->
     {{- $main := resources.Get "js/main.js" -}}
