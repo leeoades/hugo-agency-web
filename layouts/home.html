@@ -1,3 +1,4 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
+  {{ with .Site.Data.home.features }}{{ if .enable }}{{ partial "blocks/home/features.html" . }}{{ end }}{{ end }}
 {{ end }}

@@ -4,7 +4,7 @@
 @import './shared/fonts.css';
 @import './shared/pagination.css';
 
-@import './home/hero.css';
+@import './shared/title.css';
 
 @layer base {
   html {
