@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../../../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/writeonlycode/hugo-agency-web@v0.0.0-20250708132657-34a1c8eebbe5/assets/*"
+    "../../hugo-agency-web/assets/*"
    ]
   }
  }
