@@ -10,7 +10,7 @@
 
 {{ if $resource }}
   {{/* Configure the image widths to be generated: */}}
-  {{ $breakpoints := (slice 576 768 992 1200 1400) }}
+  {{ $breakpoints := (slice 320 480 768 1024 1280 1600 1920) }}
 
   {{/* Generate the images: */}}
   {{ $images := slice }}
@@ -28,6 +28,7 @@
     {{ $srcset = append $srcset (slice (printf "%s %dw" .Permalink .Width)) }}
   {{ end }}
   {{ $srcset = delimit $srcset ", " }}
+
 
   {{/* Return the img element: */}}
   <img
