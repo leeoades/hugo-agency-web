@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-@import './shared/pagination.css';
-@import './shared/title.css';
+@import './shared/_pagination.css';
+@import './shared/_miscellaneous.css';
 
 @layer base {
   html {
