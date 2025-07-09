@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
+@import './shared/_fontawesome-free.css';
 @import './shared/_pagination.css';
 @import './shared/_miscellaneous.css';
 
