@@ -12,7 +12,7 @@
 }
 
 @theme {
-  --color-primary: {{ (default "#0077B6" site.Params.colors.primary) }};
+  --color-primary: {{ site.Params.colors.primary | default "#0077B6" }};
 }
 
 body {
