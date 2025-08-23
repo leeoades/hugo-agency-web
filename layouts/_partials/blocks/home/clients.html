@@ -3,8 +3,8 @@
     <h1 class="text-2xl font-medium leading-relaxed text-center xl:max-w-1/2 mx-auto mb-16">{{ .title }}</h1>
     <div class="flex flex-wrap justify-center gap-6">
       {{ range .items}}
-        <div class="flex-none flex items-center justify-center w-24 h-20 bg-white">
-          {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "w-auto max-w-full h-16 object-contain")}}
+        <div class="flex-none flex items-center justify-center w-32 h-20 bg-white">
+          {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "w-auto max-w-full max-h-full w-32 h-20 object-contain")}}
         </div>
       {{ end }}
     </div>
