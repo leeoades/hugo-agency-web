@@ -19,6 +19,7 @@
     </div>
 
     <!--Highlighted Post-->
+    <!--
     {{ $post := (index .RegularPages 0) }}
     <div class="container mx-auto px-4 grid grid-cols-2 gap-16 mb-28">
       <div class="">
@@ -40,16 +41,18 @@
         </div>
       </div>
     </div>
-
+-->
     <!--Posts List-->
     <div class="container mx-auto px-4 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-20 gap-y-32 mb-28">
       {{ range .RegularPages }}
         <div class="">
-          <a class="block w-full aspect-square rounded-4xl overflow-hidden mb-10" href="{{ .Permalink }}">
+          <a class="block rounded-4xl overflow-hidden mb-10" href="{{ .Permalink }}">
             {{ with .Params.image }}
-              {{ partial "utilities/image" (dict "src" . "class" "w-full h-full object-cover object-center")}}
+              <div class="w-20 h-20 flex">
+                {{ partial "utilities/image" (dict "src" . "class" "w-full h-full object-contain")}}
+              </div>
             {{ else }}
-              <div class="w-full h-full bg-primary/10">
+              <div class="w-20 h-20 bg-primary/10">
               </div>
             {{ end }}
           </a>
