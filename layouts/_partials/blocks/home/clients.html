@@ -1,9 +1,11 @@
 <section id="clients" class="clients relative py-32 overflow-hidden">
-  <div class="container mx-auto px-4 ">
+  <div class="w-full px-4">
     <h1 class="text-2xl font-medium leading-relaxed text-center xl:max-w-1/2 mx-auto mb-16">{{ .title }}</h1>
-    <div class="flex flex-col xl:flex-row items-center justify-around flex-wrap gap-4">
+    <div class="flex flex-wrap justify-center gap-6">
       {{ range .items}}
-        {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-16 w-auto")}}
+        <div class="flex-none flex items-center justify-center w-24 h-20 bg-white">
+          {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "w-auto max-w-full h-16 object-contain")}}
+        </div>
       {{ end }}
     </div>
   </div>
