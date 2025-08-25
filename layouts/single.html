@@ -1,4 +1,4 @@
-{{ define "main" }}
+  {{ define "main" }}
   <section class="py-16">
     <div class="container mx-auto px-4 mb-24">
       <div class="mx-auto xl:max-w-1/2 mb-16">
@@ -12,7 +12,7 @@
       {{ if .Params.tags }}
         <div class="flex flex-wrap items-center justify-center gap-8 max-w-3/4 mx-auto">
           {{ range .Params.tags }}
-            {{ partial "components/button/pill" (dict "label" . "href" (printf "%s/tags/%s" site.BaseURL .) )}}
+            {{ partial "components/button/pill" (dict "label" . "href" ((printf "tags/%s" .) | relURL)) }}
           {{ end }}
         </div>
       {{ end }}
